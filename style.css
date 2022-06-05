@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music {
+    /* color: white; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+}
+
+.music .bar {
+    width: 2vh;
+    height: 20vh;
+    border-radius: 10px;
+    background-color: white;
+    animation: up_down 1.5s ease-in-out infinite;
+}
+
+@keyframes up_down {
+
+    0%,
+    100% {
+        height: 1vh;
+    }
+
+    50% {
+        height: 20vh;
+    }
+}
+
+.music .bar:nth-child(1) {
+    background-color: rgb(139, 3, 3);
+    animation-delay: 1s;
+}
+
+.music .bar:nth-child(2) {
+    background-color: rgb(151, 2, 146);
+    animation-delay: 0.8s;
+}
+
+.music .bar:nth-child(3) {
+    background-color: rgb(11, 125, 201);
+    animation-delay: 0.6s;
+}
+
+.music .bar:nth-child(4) {
+    background-color: rgb(38, 176, 14);
+    animation-delay: 0.4s;
+}
+
+.music .bar:nth-child(5) {
+    background-color: rgb(213, 232, 11);
+    animation-delay: 0.2s;
+}
+
+.music .bar:nth-child(6) {
+    background-color: yellow;
+    animation-delay: 0.2s;
+}
+
+.music .bar:nth-child(7) {
+    background-color: rgb(38, 176, 14);
+    animation-delay: 0.4s;
+}
+
+.music .bar:nth-child(8) {
+    background-color: rgb(11, 125, 201);
+    animation-delay: 0.6s;
+}
+
+.music .bar:nth-child(9) {
+    background-color: rgb(151, 2, 146);
+    animation-delay: 0.8s;
+}
+
+.music .bar:nth-child(10) {
+    background-color: rgb(139, 3, 3);
+    animation-delay: 1s;
+}
